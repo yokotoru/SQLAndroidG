@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Poisk">
+
+    <TextView
+        android:id="@+id/SurPoisk"
+        android:layout_width="318dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NamePoisk" />
+
+    <TextView
+        android:id="@+id/NamePoisk"
+        android:layout_width="318dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IDPoisk" />
+
+    <TextView
+        android:id="@+id/IDPoisk"
+        android:layout_width="318dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="184dp"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ImgP"
+        android:layout_width="225dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/no_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/Poiskov"
+        android:layout_width="278dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Введите имя студента"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SurPoisk" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/buttonshare"
+        android:backgroundTint="#D4F3FF"
+        android:onClick="GetTextFromSql"
+        android:text="Поиск"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Poiskov" />
+
+    <Button
+        android:id="@+id/Backk"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/buttonshare"
+        android:backgroundTint="#D4F3FF"
+        android:text="Назад"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Poiskov" />
+</androidx.constraintlayout.widget.ConstraintLayout>

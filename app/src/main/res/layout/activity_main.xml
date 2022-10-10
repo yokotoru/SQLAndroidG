@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Name_id"
+        android:layout_width="318dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="188dp"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/IName"
+        android:layout_width="318dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name_id" />
+
+    <TextView
+        android:id="@+id/ISurname"
+        android:layout_width="318dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IName" />
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/buttonshare"
+        android:onClick="GetTextFromSql1"
+        android:shadowColor="#A8A8A8"
+        android:shadowRadius="20"
+        android:text="Вперёд"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ISurname"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/buttonshare"
+        android:onClick="GetTextFromSql"
+        android:shadowColor="#A8A8A8"
+        android:shadowRadius="20"
+        android:text="Назад"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ISurname"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/addData"
+        android:layout_width="49dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonshare"
+        android:foreground="@drawable/ic_add"
+        android:shadowColor="#A8A8A8"
+        android:shadowRadius="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/Poisk"
+        android:layout_width="123dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/buttonshare"
+        android:backgroundTint="#D4F3FF"
+        android:text="Поиск"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/IzmData"
+        android:layout_width="123dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/buttonshare"
+        android:backgroundTint="#D4F3FF"
+        android:text="Изменить"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/delData"
+        android:layout_width="123dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/buttonshare"
+        android:backgroundTint="#D4F3FF"
+        android:text="Удалить"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="220dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/no_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="49dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonshare"
+        android:foreground="@drawable/ic_refresh_fill0_wght400_grad0_opsz48"
+        android:onClick="GetTextFromSql2"
+        android:shadowColor="#A8A8A8"
+        android:shadowRadius="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

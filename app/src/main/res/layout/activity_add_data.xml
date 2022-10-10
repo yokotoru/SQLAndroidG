@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddData">
+
+    <Button
+        android:id="@+id/back"
+
+        android:layout_width="134dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/buttonshare"
+        android:backgroundTint="#D4F3FF"
+        android:text="Назад"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/izmen"
+        android:layout_width="134dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/buttonshare"
+        android:backgroundTint="#D4F3FF"
+        android:onClick="SetTextFromSql"
+        android:text="Добавить"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/AddName"
+        android:layout_width="318dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageAdd" />
+
+    <EditText
+        android:id="@+id/AddSur"
+        android:layout_width="318dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Фамилия"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddName" />
+
+    <ImageView
+        android:id="@+id/imageAdd"
+        android:layout_width="336dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickChooseImage"
+        android:src="@drawable/no_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
